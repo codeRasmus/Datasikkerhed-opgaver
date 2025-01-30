@@ -8,7 +8,7 @@ console.log("You have chosen key:", process.argv[2]);
 if (process.argv[4]) {
   if (process.argv[4] === "decrypt") {
     vigD(process.argv[2], process.argv[3]);
-  } else if (process.arg[4] === "encrypt") {
+  } else if (process.argv[4] === "encrypt") {
     vigE(process.argv[2], process.argv[3]);
   }
   {
