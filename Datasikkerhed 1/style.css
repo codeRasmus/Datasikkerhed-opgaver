@@ -1,0 +1,6 @@
+#vignereWrapper {
+  display: flex;
+}
+#vignereWrapper div {
+  margin: 20px;
+}
