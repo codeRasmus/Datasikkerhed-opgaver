@@ -1,0 +1,13 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+In the context of secure communication, clearsigning provides a method for digitally signing a plaintext document in a way that allows the recipient to read the content while ensuring its authenticity and integrity.
+
+One example use case for clearsigning is in the context of legal agreements between two parties. When a contract is created, the parties can use clearsigning to digitally sign the contract document, confirming their agreement to the terms. This allows each party to verify the document’s authenticity and ensures that no changes have been made after the signing process.
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRJgtNLO0s5X8v0pEN8RR6kR8qJdgUCZ5ywugAKCRB8RR6kR8qJ
+drgUAQD5PLwHKK5VS/FYde8jvrcIOVOT5M9gaSEfFMdFG4ObyAEAkgdo8v/swAvg
+MmwvZfag1h+jomYJ2B5A5MI903Bl2w0=
+=FhTn
+-----END PGP SIGNATURE-----
