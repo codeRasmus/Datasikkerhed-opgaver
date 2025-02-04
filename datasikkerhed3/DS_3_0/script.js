@@ -36,16 +36,17 @@ id INTEGER PRIMARY KEY AUTOINCREMENT,
 );
 
 const username = readlineSync.question("Indtast brugernavn: "); // username fra CLI
-const leakedPasswords = process.argv[2]; // valgte passwords-fil fra CLI
 let password = readlineSync.question("Indtast password: ", {
   hideEchoBack: true,
 }); // password fra CLI
+const leakedPasswords = process.argv[2]; // valgte passwords-fil fra CLI
 
 console.log(
   `Tjekker om dit password, ${
     password || "(ikke indtastet endnu)"
   } findes i filen ${leakedPasswords}`
 );
+
 function addUser() {
   try {
     // Initialiser Rockyou Singleton
@@ -60,8 +61,7 @@ function addUser() {
       console.log(
         `✅ You chose wisely, ${username}! Your password was not found among all the leaked ones in ${process.argv[2]}`
       );
-
-      // Generate a salt manually (10 salt rounds)
+      // Generate a salt manually
       bcrypt.genSalt(10, (err, salt) => {
         if (err) {
           console.error("Fejl ved generering af salt", err.message);
