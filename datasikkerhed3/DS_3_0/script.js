@@ -6,7 +6,7 @@ const sqlite3 = require("sqlite3").verbose(); // SQLite3 module
 const bcrypt = require("bcrypt"); // bcrypt module
 
 if (process.argv.length < 3) {
-  console.error("Brug: node script.js <rockyou.txt> [password]");
+  console.error("Brug: node script.js <rockyou.txt>");
   process.exit(1);
 }
 
