@@ -1,0 +1,19 @@
+{
+  "name": "ds_3_0",
+  "version": "1.0.0",
+  "main": "rockyou.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "readline-sync": "^1.4.10",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {},
+  "description": "node script.js"
+}

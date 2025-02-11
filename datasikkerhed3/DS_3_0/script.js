@@ -3,7 +3,7 @@ const readlineSync = require("readline-sync"); // Input fra CLI
 const Rock = require("./rockyou.js"); // Import Rockyou Singleton
 const fs = require("fs"); // FS module for writing to file
 const sqlite3 = require("sqlite3").verbose(); // SQLite3 module
-const bcrypt = require("bcrypt"); // bcrypt module
+const bcrypt = require("bcryptjs"); // bcrypt module
 
 if (process.argv.length < 3) {
   console.error("Brug: node script.js <rockyou.txt>");
