@@ -1,0 +1,27 @@
+```
+rasmus$ cat bftest.txt
+user1:$2y$10$5h3.KMjuMWGqNRWZ7lz38ubEFJuHFr9dyPKdYohwoNZuWipHQ7hz.
+user2:$2y$10$xNskKPSTS3m64xr5y32DBecrhHjmlHVJIXIgWROY.UBi4G1XUwELy
+rasmus:$2y$10$G3PXidCVEI1uAI4sTl9jqei2B33Be2BeRwtWCdubCRHRzgeoYAMf6
+niels:$2y$10$ln9Oh7Lz6DMCirh.TkEvkeoy7nKOrArs2Ep./XnhKemGovlJtub0i
+neo:$2y$10$.sAkgJoNf/5N/TxrFAVKeetyKD0wEUJfKpPXyve6JWpn6C2QC5oLK
+
+rasmus$ john bftest.txt --wordlist=password.lst 
+Loaded 5 password hashes with 5 different salts (bcrypt [Blowfish 32/64 X3])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+P455w0rd         (rasmus)
+MYSECRET         (neo)
+HELLO            (user2)
+Test1234         (niels)
+Password         (user1)
+5g 0:00:00:14 100% 0.3396g/s 19.36p/s 30.16c/s 30.16C/s canada..Password
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+
+rasmus$ john --show bftest.txt 
+user1:Password
+user2:HELLO
+rasmus:P455w0rd
+niels:Test1234
+neo:MYSECRET
+```
